@@ -154,13 +154,15 @@ cargarCarrito();
 
 // Configuración de Firebase
 const firebaseConfig = {
-    apiKey: "TU_API_KEY",
-    authDomain: "TU_AUTH_DOMAIN",
-    projectId: "TU_PROJECT_ID",
-    storageBucket: "TU_STORAGE_BUCKET",
-    messagingSenderId: "TU_MESSAGING_SENDER_ID",
-    appId: "TU_APP_ID"
-};
+    apiKey: "AIzaSyBxRGJuWM7gwu9768_Xdt8aRzuicxFoP6U",
+    authDomain: "vendettaaticweb.firebaseapp.com",
+    projectId: "vendettaaticweb",
+    storageBucket: "vendettaaticweb.firebasestorage.app",
+    messagingSenderId: "817102360300",
+    appId: "1:817102360300:web:717ed7fda0ceb9a0465fc9",
+    measurementId: "G-2QP9V280GZ"
+  };
+  
 
 // Inicializar Firebase
 const app = firebase.initializeApp(firebaseConfig);
