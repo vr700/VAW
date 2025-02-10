@@ -152,7 +152,7 @@ cargarCarrito();
 
 
 
-// Configuración de Firebase
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
     apiKey: "AIzaSyBxRGJuWM7gwu9768_Xdt8aRzuicxFoP6U",
     authDomain: "vendettaaticweb.firebaseapp.com",
