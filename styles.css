@@ -1,0 +1,375 @@
+/* Estilos Generales */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 40px; /* Altura fija para el logo */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://via.placeholder.com/1500') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.hero .btn {
+    background: #007aff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+/* Secciones de Productos */
+.productos, .seleccion, .cuadros, .muebles {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.productos h2, .seleccion h2, .cuadros h2, .muebles h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.productos-grid, .cuadros-grid, .muebles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.producto, .cuadro, .mueble {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.producto img, .cuadro img, .mueble img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.producto h3, .cuadro h3, .mueble h3 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+}
+
+.producto p, .cuadro p, .mueble p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Galería */
+.galeria {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.galeria h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.galeria-grid img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+/* Contacto */
+.contacto {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contacto h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+.contacto form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contacto input, .contacto textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contacto button {
+    background: #007aff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para la página de detalles del producto */
+.detalles-producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.imagen-producto img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.info-producto {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.info-producto h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info-producto p {
+    font-size: 18px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.btn {
+    background: #007aff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* Estilos para laptop y iPad */
+@media (min-width: 768px) {
+    .detalles-producto {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 40px; /* Espacio entre la imagen y la información */
+    }
+
+    .imagen-producto {
+        flex: 1; /* La imagen ocupa el 50% del espacio */
+    }
+
+    .info-producto {
+        flex: 1; /* La información ocupa el 50% del espacio */
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .imagen-producto img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Estilos para celular */
+@media (max-width: 767px) {
+    .imagen-producto img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .info-producto {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Footer */
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .productos-grid, .galeria-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .productos-grid, .galeria-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .logo img {
+        height: 30px; /* Altura más pequeña para celular */
+    }
+}
+
+/* Estilos para el hero section */
+.hero {
+    background: url('images/Hero.png') no-repeat center center/cover;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative; /* Necesario para el overlay */
+}
+
+/* Overlay oscuro */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente oscuro */
+    z-index: 1; /* Asegura que el overlay esté sobre la imagen */
+}
+
+/* Contenido del hero (título, descripción y botón) */
+.hero-content {
+    position: relative; /* Asegura que el contenido esté sobre el overlay */
+    z-index: 2; /* Coloca el contenido por encima del overlay */
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.hero .btn {
+    background: #007aff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+/* Estilos para el carrito */
+.carrito {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.carrito h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#lista-carrito {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#lista-carrito li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#whatsappButton {
+    background: #25d366;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+#whatsappButton:hover {
+    background: #128c7e;
+}

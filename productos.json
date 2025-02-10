@@ -1,0 +1,67 @@
+[
+    {
+        "id": 1,
+        "nombre": "Triple Car Portrait",
+        "descripcion": "Diseño contemporáneo para cualquier espacio.",
+        "imagen":"images/3 cars.png",
+        "precio": 150,
+        "categoria": "cuadro"
+    },
+    {
+        "id": 2,
+        "nombre": "Ghost Painting",
+        "descripcion": "Elegancia y funcionalidad en un solo diseño.",
+        "imagen": "images/ghost.png",
+        "precio": 500,
+        "categoria": "cuadro"
+    },
+    {
+        "id": 3,
+        "nombre": "Bathroom Cat",
+        "descripcion": "Arte abstracto para espacios únicos.",
+        "imagen": "images/cat bathroom.png",
+        "precio": 200,
+        "categoria": "cuadro"
+    },
+    {
+        "id": 4,
+        "nombre": "Minimalist Circles 1",
+        "descripcion": "Diseño rústico para espacios cálidos.",
+        "imagen": "images/minimalist paint.png",
+        "precio": 600,
+        "categoria": "cuadro"
+    },
+    {
+        "id": 5,
+        "nombre": "Catalyst",
+        "descripcion": "Diseño rústico para espacios cálidos.",
+        "imagen": "images/catalyst.jpg",
+        "precio": 600,
+        "categoria": "cuadro"
+    },
+    {
+        "id": 6,
+        "nombre": "Bar Pequeño",
+        "descripcion": "Diseño rústico para espacios cálidos.",
+        "imagen": "images/MuebleBar.png",
+        "precio": 600,
+        "categoria": "mueble"
+    },
+    {
+        "id": 7,
+        "nombre": "Entrada Minimalista",
+        "descripcion": "Diseño rústico para espacios cálidos.",
+        "imagen": "images/entrada.png",
+        "precio": 600,
+        "categoria": "mueble"
+    },
+    {
+        "id": 8,
+        "nombre": "Mueble de TV",
+        "descripcion": "Diseño rústico para espacios cálidos.",
+        "imagen": "images/tvtable.PNG",
+        "precio": 600,
+        "categoria": "mueble"
+    }
+       
+]

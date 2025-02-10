@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendetta Atic - Detalles del Producto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <picture>
+                    <!-- Imagen para celular (isotipo) -->
+                    <source srcset="images/logoo (1).jpeg" media="(max-width: 767px)">
+                    <!-- Imagen para tablet y laptop (logotipo) -->
+                    <img src="images/logoo (4).jpeg" alt="Vendetta Atic">
+                </picture>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="detalles-producto" id="detalles-producto">
+        <div class="imagen-producto">
+            <img src="https://via.placeholder.com/800" alt="Nombre del Producto">
+        </div>
+        <div class="info-producto">
+            <h3 id="nombre-producto">Nombre del Producto</h3>
+            <p><strong>Descripción:</strong> <span id="descripcion-producto">Descripción breve del producto.</span></p>
+            <p><strong>Precio:</strong> $<span id="precio-producto">150</span></p>
+            <button class="btn" id="btn-agregar-carrito">Añadir al carrito</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Vendetta Atic. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
